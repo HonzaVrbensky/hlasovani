@@ -10,5 +10,6 @@ input.onButtonPressed(Button.A, function on_button_pressed_a() {
     basic.showNumber(vote)
 })
 input.onButtonPressed(Button.B, function sending() {
-    radio.sendValue("vote", my_serial)
+    radio.sendValue("vote", 1)
+    music.playTone(Note.C, music.beat(1000))
 })
